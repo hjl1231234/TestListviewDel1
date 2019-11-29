@@ -1,0 +1,49 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/public_layout_ii"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/edit_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fbfbf4"
+        android:padding="5dp">
+
+        <CheckBox
+            android:id="@+id/check_all"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:background="#6583F0"
+            android:button="@null"
+            android:gravity="center"
+            android:text="全选"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btn_delete"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/cb_edit"
+            android:background="#6583F0"
+            android:text="删除"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/cb_edit"
+            android:layout_width="60dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:background="#6583F0"
+            android:button="@null"
+            android:gravity="center"
+            android:text="编辑" />
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
